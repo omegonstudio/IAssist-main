@@ -1032,7 +1032,9 @@ export default function IAssistLanding() {
               {/* Logo amarillo y derechos */}
               <div className="flex items-center space-x-4 flex-nowrap" style={{ marginRight: "20%"}}>
                 <p className="text-sm text-gray-400 whitespace-nowrap">{t.footer.rights}</p>
+                 <Link href="https://omegon.com.ar/" passHref>
                 <Image src="/logo blanco.svg" alt="Logo" width={32} height={32} />
+                </Link>
               </div>
               
             </div>
