@@ -132,7 +132,7 @@ const translations = {
       email: "Email",
       message: "Mensaje",
       send: "Enviar mensaje",
-      rights: "© 2024 IASSIST. Todos los derechos reservados.",
+      rights: "© 2025 OMEGON. Todos los derechos reservados.",
       privacy: "Privacidad",
       terms: "Términos y Condiciones",
     },
@@ -240,7 +240,7 @@ const translations = {
       email: "Email",
       message: "Message",
       send: "Send message",
-      rights: "© 2024 IASSIST. All rights reserved.",
+      rights: "© 2025 OMEGON. All rights reserved.",
       privacy: "Privacy",
       terms: "Terms and Conditions",
     },
@@ -355,7 +355,7 @@ export default function IAssistLanding() {
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/hero-image.jpg"
+            src="/skate-park.jpg"
             alt="Persona usando tecnología"
             fill
             className="object-cover"
@@ -380,7 +380,7 @@ export default function IAssistLanding() {
           </h1>
           <p
             className={`text-xl md:text-2xl mb-8 max-w-2xl mx-auto transition-colors duration-300 ${
-              isDark ? "text-[#949494]" : "text-gray-600"
+              isDark ? "text-[#FFFFFF]" : "text-gray-600"
             }`}
           >
             {t.hero.subtitle}
@@ -712,10 +712,10 @@ export default function IAssistLanding() {
       </section>
 
       {/* Doble Llamado Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-40 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/group-phones.jpg"
+            src="/amusement-selfie.jpg"
             alt="Personas disfrutando sin preocupaciones"
             fill
             className="object-cover"
@@ -1015,7 +1015,7 @@ export default function IAssistLanding() {
       >
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4" >
               <Image src="/logo.png" alt="IASSIST Logo" width={100} height={32} className="brightness-0 invert" />
             </div>
 
@@ -1024,15 +1024,23 @@ export default function IAssistLanding() {
                 <Link href="/privacidad" className="text-gray-400 hover:text-white transition-colors">
                   {t.footer.privacy}
                 </Link>
-                <Link href="/terminos" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/terminos" className="text-gray-400 hover:text-white transition-colors flex-nowrap">
                   {t.footer.terms}
                 </Link>
               </div>
 
-              <p className="text-sm text-gray-400">{t.footer.rights}</p>
+              {/* Logo amarillo y derechos */}
+              <div className="flex items-center space-x-4 flex-nowrap" style={{ marginRight: "20%"}}>
+                <p className="text-sm text-gray-400 whitespace-nowrap">{t.footer.rights}</p>
+                <Image src="/logo blanco.svg" alt="Logo" width={32} height={32} />
+              </div>
+              
             </div>
+
           </div>
+          
         </div>
+
       </footer>
 
       {/* Chat Bot */}
